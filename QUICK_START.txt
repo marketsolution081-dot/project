@@ -1,0 +1,16 @@
+HCM LITE - QUICK START (WINDOWS)
+
+1. Extract the ZIP.
+2. Open PowerShell inside the extracted HCM_Lite_Complete folder.
+3. Run:
+   py -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   pip install -r requirements.txt
+   $env:HCM_SECRET = "replace-with-a-long-random-secret"
+   uvicorn main:app --reload
+4. Open http://127.0.0.1:8000
+5. Create the first Admin account, then log in.
+6. Full API documentation: http://127.0.0.1:8000/docs
+
+Do not commit .env secrets or real employee data to a public GitHub repository.
+Tax slabs are not legal advice: configure and verify them for your organization.
